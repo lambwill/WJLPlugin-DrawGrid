@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+   <ApplicationPackage
+      SchemaVersion="1.0"
+      AppVersion="1.0.0.0"
+      Author="WJLamb"
+      Name="DrawGrid"
+      Icon="./Contents/Resources/DrawGrid_32x32.bmp">
+   >
+  <CompanyDetails
+    Name="lambsoft"
+    Url="www.lambsoft.net"
+    Email="support@lambsoft.net"
+  />
+  <Components>
+    <RuntimeRequirements SeriesMin="R19"/>
+    <ComponentEntry
+      AppName="DrawGrid"
+      ModuleName="./Contents/2013/WJL_DrawGrid.dll"
+      AppDescription="WJL Plugin: DrawGrid"
+      LoadOnAutoCADStartup="False"
+      LoadOnCommandInvocation="True"
+      LoadOnRequest="True">
+      <Commands GroupName="DrawGrid">
+        <Command Local="DrawGrid" Global="DrawGrid" />
+        </Commands>
+    </ComponentEntry>
+    <ComponentEntry
+      AppName="DrawGrid"
+      ModuleName="./Contents/Resources/DrawGrid.cuix" />
+  </Components>
+       
+  </ApplicationPackage>
